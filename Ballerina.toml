@@ -1,0 +1,2 @@
+[workspace]
+packages = ["welcome_automation", "email_svc", "customer_data_enricher"]

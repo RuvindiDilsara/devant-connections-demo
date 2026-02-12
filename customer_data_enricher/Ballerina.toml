@@ -1,0 +1,5 @@
+[package]
+org = "kajendran"
+name = "customer_data_enricher"
+version = "0.1.0"
+title = "customer-data-enricher"
