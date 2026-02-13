@@ -26,6 +26,37 @@ version = "0.0.0"
 
 [[package]]
 org = "ballerina"
+name = "lang.__internal"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.object"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.array"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.__internal"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.error"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"}
+]
+
+[[package]]
+org = "ballerina"
+name = "lang.object"
+version = "0.0.0"
+
+[[package]]
+org = "ballerina"
 name = "lang.value"
 version = "0.0.0"
 dependencies = [
@@ -33,13 +64,31 @@ dependencies = [
 ]
 
 [[package]]
-org = "kajendran"
-name = "customer_data_enricher"
-version = "0.1.0"
+org = "ballerina"
+name = "observe"
+version = "1.7.0"
 dependencies = [
-	{org = "ballerina", name = "io"}
-]
-modules = [
-	{org = "kajendran", packageName = "customer_data_enricher", moduleName = "customer_data_enricher"}
+	{org = "ballerina", name = "jballerina.java"}
 ]
 
+[[package]]
+org = "ballerina"
+name = "test"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "lang.array"},
+	{org = "ballerina", name = "lang.error"}
+]
+
+[[package]]
+org = "ballerinai"
+name = "observe"
+version = "0.0.0"
+dependencies = [
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "observe"}
+]
+modules = [
+	{org = "ballerinai", packageName = "observe", moduleName = "observe"}
+]
